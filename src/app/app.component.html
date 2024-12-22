@@ -1,0 +1,135 @@
+<div class="page-wrap">
+  <router-outlet />
+  <app-header></app-header>
+
+  <section class="hero-banner-sec cf">
+		<div class="container">
+			<div class="d-md-flex align-items-center hero-banner-outer w-100">
+				<div class="hero-left-caption cf">
+					<h2 class="text-gradiant">{{heroheadingOne}}</h2>
+					<h1>{{heroheadingTwo}}</h1>
+					<div class="w-100 mt-md-5 mt-2">
+						<a href="javascript:void(0)" class="main-btn md-btn">Let's Talk about Project <i class="ms-md-3 ms-2"><img src="assets/images/btn-arrow.webp"></i></a>
+					</div>
+				</div>
+				<div class="hero-rgt-pic cf">
+					<picture>
+						<source srcset="assets/images/hero-ai-img.webp" type="image/webp">
+						<source srcset="assets/images/hero-ai-img.jpg" type="image/jpeg">
+						<source srcset="assets/images/hero-ai-img.png" type="image/png">
+						<img src="assets/images/hero-ai-img.jpg" alt="AI / ML Technologies">
+					  </picture>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <section class="about-sec cf">
+		<div class="container position-relative">
+			<picture>
+				<source srcset="assets/images/about-bg-img.webp" type="image/webp">
+				<source srcset="assets/images/about-bg-img.jpg" type="image/jpeg">
+				<source srcset="assets/images/about-bg-img.png" type="image/png">
+				<img src="assets/images/about-bg-img.jpg" alt="About Us Information">
+			</picture>
+			<div class="about-outer cf">
+				<h2 class="text-gradiant">{{Aboutcompany}}</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<div class="w-100 mt-md-5 mt-2">
+					<a href="javascript:void(0)" class="main-btn md-btn">More About <i class="ms-md-3 ms-2"><img src="assets/images/btn-arrow.webp"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <section class="services-sec cf">
+		<div class="container">
+			<h2>{{serviceHeading}}</h2>
+			<p>{{servicedesc}}</p>
+			<app-servicecarousel></app-servicecarousel>
+		</div>
+	</section>
+
+  <section class="testimonial-sec cf">
+		<div class="container">
+			<h2>{{testimonialHeading}}</h2>
+			<app-clientcarousel></app-clientcarousel>
+		</div>
+	</section>
+
+  <section class="partner-logo-sec cf">
+		<div class="container">
+			<h2>{{partnerHeading}}</h2>
+			<ul>
+				<li>
+					<figure>
+						<img src="assets/images/partner-img1.png">
+					</figure>
+				</li>	
+				<li>
+					<figure>
+						<img src="assets/images/partner-img2.png">
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="assets/images/partner-img3.png">
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="assets/images/partner-img4.png">
+					</figure>
+				</li>	
+			</ul>
+		</div>
+	</section>
+
+  <section class="faq-sec cf">
+		<div class="container">
+			<h2>{{faqHeading}}</h2>
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+				  <h3 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					</button>
+				  </h3>
+				  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h3 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Where is the head office of Zero Gravity Solution located?
+					</button>
+				  </h3>
+				  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h3 class="accordion-header" id="headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Where is the head office of Zero Gravity Solution located?
+					</button>
+				  </h3>
+				  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</section>
+
+</div>
+
+<app-footer></app-footer>
